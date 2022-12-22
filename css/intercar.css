@@ -1,0 +1,973 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  body{
+        background: #f0ecec;
+  }
+  .banner {
+    width: 100%;
+    height: 140px;
+    position: relative;
+  }
+  .banner img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .time {
+    display: none;
+  }
+  .wp-time {
+    width: 100%;
+    z-index: 1;
+    margin-top: -30px;
+  }
+  .wp-t-date{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 0.12rem 0.2rem 0 rgb(72 72 72 / 8%);
+    border-radius: 0.16rem;
+    box-sizing: border-box;
+  }
+  .wp-td-position{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  .form_item{
+    width: 40%;
+  }
+  .form_tem{
+    width: 40%;
+  }
+  .wp-p-pick-car p{
+        width: 65px;
+    font-size: .24rem;
+    font-weight: 400;
+    color: #9ea1b0;
+  }
+  .wp-p-pick-car select{
+    border: none;
+    outline: none;
+  }
+  .place{
+    font-size: .36rem;
+    line-height: 1.5;
+    max-width: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #city,
+  #county{
+    width: 60%;
+    border: 0;
+  }
+  .province{
+    -webkit-appearance: none;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 8px 0px 18px 0px;
+  }
+  .wp-car-pi{
+        display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .ydhc{
+    width: 48px;
+  }
+  .anniu{
+        padding-top: 10px;
+  }
+  .switch-btn{
+    position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 46px;
+      height: 24px;
+      line-height: 22px;
+      padding: 0;
+      vertical-align: middle;
+      border-radius: 22px 22px;
+      border: 1px solid #c4cfea;
+      background-color: #c4cfea;
+      cursor: pointer;
+      -webkit-transition: all .3s cubic-bezier(.35,0,.25,1);
+      transition: all .3s cubic-bezier(.35,0,.25,1);
+  }
+  .switch-btn:after {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 3px;
+      top: 2px;
+      border-radius: 50% 50%;
+      background-color: #fff;
+      content: " ";
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+      transition: all .3s cubic-bezier(.78,.14,.15,.86);
+      -webkit-animation-timing-function: cubic-bezier(.35,0,.25,1);
+      animation-timing-function: cubic-bezier(.35,0,.25,1);
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+  }
+  .xian{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+      bottom: 0;
+      left: 0;
+      background: #e6e6ea;
+  }
+  .hc{
+    display: none;
+  }
+  .btn-switch{
+    border: 1px solid#2871f7;
+    background-color: #2871f7;
+  }
+  .btn-switch::after{
+    left: 23px;
+  }
+  .chengshi{
+        display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .wp-td-time{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  input[type="data"]::-webkit-calendar-picker-indicator {      /*这是控制下拉小箭头的*/
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px #fff, 0 1px #eee;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);
+    color: #666;
+  }
+  input[type=date]::-webkit-datetime-edit-year-field { 
+    color: purple; 
+  }
+  input[type=date]::-webkit-calendar-picker-indicator {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px #fff, 0 1px #eee;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);
+    color: #666;
+  }
+  .clock{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    width: 85%;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    height: 54px;
+  }
+  .time-pick{
+    width: 40%;
+  }
+  .wp-td-time .wp-time{
+    width: 20%;
+    padding: 0 0.18rem 0.4rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9ea1b0;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: center;
+    display: flex;
+  }
+  .botton-arrow-triangle{
+    position: absolute;
+    width: 100%;
+    height: 0.08rem;
+    left: 50%;
+    border-bottom: 0.02rem solid #696e7c;
+    border-right: 0.02rem solid #696e7c;
+    -webkit-transform: skewX(30deg) translateX(-50%);
+    transform: skewX(30deg) translateX(-50%);
+  }
+  .botton-arrow-container{
+    width: 100%;
+    position: relative;
+  }
+  .wp-time-car{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+  .wp-td-term{
+    width: 100%;
+    height: 46px;
+    background: #2871f7;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .car-style,
+  .car-seats,
+  .car-brand,
+  .ordering,
+  .content,
+  .skip{
+    display: none;
+  }
+  .wp-content{
+    width: 100%;
+  }
+  .wp-content-car{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 10px 0;
+  }
+  .wp-ccar-left img{
+    width: 100%;
+  }
+  .wp-ccar-left{
+    width: 145px;
+    height: 125px;
+  }
+  .cqc{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .wp-ccar-center{
+    height: 75%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wp-ccar-center h4{
+    text-align: left;
+    font-size: 22px;
+  }
+  .car-type span{
+    font-size: 12px;
+  }
+  .pingpai{
+    display: flex;
+  }
+  .pingpai svg{
+    width: 32px;
+    height: 18px;
+  }
+  .pingpai .qian{
+    height: 30px;
+  }
+  .wp-ccar-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wz{
+    width: 46%;
+    /* height: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .wz .browse{
+    font-size: 20px;
+  }
+  .reserve a{
+    font-size: 30px;
+    display: flex;
+    height: 70%;
+    color: #fd640e;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .day{
+        display: flex;
+    width: 100%;
+  }
+  .total{
+    font-size: 15px;
+  }
+  .reserve{
+    display: flex;
+    align-items: center;
+  }
+  .browses{
+    font-size: 12px;
+  }
+  .jr{
+    width: 20px;
+    height: 100%;
+  }
+  .back-top{
+    display: none;
+  }
+  .wp-skip{
+    margin: 42px auto;
+    display: flex;
+    align-items: center;
+  } 
+  .wp-skip ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .wp-skip ul li{
+    list-style: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 5px;
+  }
+  .wp-skip ul li a{
+    display: inline-block;
+    width: 100%;
+    color: #9b9b9b;
+    font-size: 18px;
+    box-sizing: border-box;
+    line-height: 42px;
+    text-align: center;
+  }
+  .button{
+    background-color: rgb(0 0 0 / 0%);
+  }
+  .icon-words{
+    display: flex;
+  }
+
+}
+
+
+/*---------------- banner 部分---------------- */
+    @media (min-width: 768px){
+      .contain {
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.banner{
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+    }
+    /*---------------- 取还时间---------------- */
+    .time{
+        height: 168px;
+        margin-bottom: 30px;
+        box-shadow: -16px 9px 12px 0px
+        rgba(98, 98, 98, 0.11);
+    }
+    .t-date{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* 分三块，地点时间和取车 */
+    .td-position{
+        width: 428px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .td-time{
+        width: 486px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .td-term{
+        width: 156px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* 取车地点 */
+    .p-pick-car{
+        display: flex;
+        width: 100%;
+        height: 54px;
+        font-size: 16px;
+    }
+    .pick-car{
+        background-color: #fff;
+        width: 70px;
+        height: 100%;
+        text-align: center;
+        line-height: 54px;
+        border: 2px solid #e7e7e7;
+        color: #525252;
+        font-family: "SourceHanSansCN-Medium";
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    #city{
+        font-family: "SourceHanSansCN-Medium";
+        font-size: 16px;
+        width: 168px;
+        border: none;
+        border: 2px solid #e7e7e7;
+        height: 100%;
+        box-sizing: border-box;
+        color: #989898;
+        border-left: none;
+        }
+    #county{
+        box-sizing: border-box;
+        width: 190px;
+        height: 100%;
+        border: none;
+        border: 2px solid #e7e7e7;
+        color: #989898;
+        border-left: none;
+    }
+    /* 取车的时间 */
+    .td-time-pick{
+        height: 54px;
+        display: flex;
+        font-size: 16px;
+    }
+    .td-time-car{
+        background-color: #fff;
+        width: 100px;
+        border: none;
+        height: 100%;
+        border: 2px solid #e7e7e7;
+        line-height: 54px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .inputdate{
+        width: 230px;
+        border: none;
+        border: 2px solid #e7e7e7;
+        box-sizing: border-box;
+        height: 100%;
+        border-left: none;
+        text-align: center;
+        color: #989898;
+        line-height: 54px;
+    }
+    .inputdate::-webkit-inner-spin-button{
+        visibility: hidden;
+    }
+    .inputdate::-webkit-calendar-picker-indicator{
+        font-size: 16px;
+        padding: 16px;
+    }
+    #clock{
+        width: 156px;
+        border: none;
+        border: 2px solid #e7e7e7;
+        box-sizing: border-box;
+        height: 100%;
+        border-left: none;
+        text-align: center;
+        color: #989898;
+        height: 54px;
+    }
+    .td-time-back{
+        height: 54px;
+        display: flex;
+        font-size: 16px;
+    }
+    /* 是否租车 */
+    .td-term h4{
+        color: #636363;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .td-term h4 span{
+        color: #f88349;
+    }
+    .td-term-car{
+        width: 156px;
+        height: 58px;
+        border-radius: 6px;
+        background-color: #ca9b44;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        line-height: 58px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    /*---------------- 车型组---------------- */
+    .car-style{
+        height: 138px;
+        border-bottom: dashed 1px #ddd;
+        background-color: #fff;
+        font-family: "SourceHanSansCN-Medium";
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .car-style .cs-words{
+        margin: 0 52px 0 26px;
+        width: 60px;
+    }
+    .car-style ul{
+        width: 1012px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-right: 38px;
+    }
+    .car-style ul a{
+        height: 80px;
+        width: 122px;
+        box-sizing: border-box;
+        border: solid 1px #e6e6e6;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .car-style ul li:nth-child(1) .img{
+        width: 46px;
+        height: 40px;
+        background: url(../images/雪碧图.png);
+    }
+    .car-style ul li:nth-child(2) .img{
+        width: 60px;
+        height: 34px;
+        background: url(../images/雪碧图.png);
+        background-position: 0 -44px;
+    }
+    .car-style ul li:nth-child(3) .img{
+        width: 60px;
+        height: 34px;
+        background: url(../images/雪碧图.png);
+        background-position: 0 -84px;
+    }
+    .car-style ul li:nth-child(4) .img{
+        width: 60px;
+        height: 34px;
+        background: url(../images/雪碧图.png);
+        background-position: 0 -122px;
+    }
+    .car-style ul li:nth-child(5) .img{
+        width: 60px;
+        height: 34px;
+        background: url(../images/雪碧图.png);
+        background-position: 0 -165px;
+    }
+    .car-style ul li:nth-child(6) .img{
+        width: 60px;
+        height: 34px;
+        background: url(../images/雪碧图.png);
+        background-position: 0 -212px;
+    }
+        /* 剩余雪碧图同上 */
+        .car-style ul a:hover{
+        border-color: #fed201;
+    }
+    /* <!-- ----------------车辆座位---------------- --> */
+    .car-seats{
+        height: 70px;
+        border-bottom: dashed 1px #ddd;
+        background-color: #fff;
+    }
+    .car-seats ul{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+    }
+    .car-seats ul li{
+        margin: 0 26px;
+        border: none;
+    }
+    #seacts1, #seacts2,#seacts3{
+        width: 18px;
+        height: 18px;
+    }
+    /*---------------- 品牌---------------- */
+    .car-brand{
+        height: 106px;
+        margin-bottom: 16px;
+        background-color: #fff;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .car-brand .check-brand{
+        margin: 0 52px 0 26px;
+    }
+    .cb-brand{
+        margin-right: 26px;
+    }
+    .dif-brand{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .dif-brand .first{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dif-brand .second{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cb-brand span{
+        height: 22px;
+    }
+    .first li:first-child span::before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -249px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .first li:nth-child(2) span::before{
+        content: "";
+        display: inline-block;
+        width: 54px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -272px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .first li:nth-child(3) span::before{
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -294px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .first li:nth-child(4) span::before{
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -318px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .first li:nth-child(5) span::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -342px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    
+    .first li:last-child span::before{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -364px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    /* 其余同上 */
+    /* 第二排 */
+    .second li:first-child span::before{
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -249px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .second li:nth-child(2) span::before{
+        content: "";
+        display: inline-block;
+        width: 54px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -272px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .second li:nth-child(3) span::before{
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -294px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .second li:nth-child(4) span::before{
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -318px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    .second li:nth-child(5) span::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -342px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    
+    .second li:last-child span::before{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 20px;
+        background: url(../images/雪碧图.png) ;
+        background-position: 0 -364px;
+        vertical-align:middle;
+        margin: 2px;
+    }
+    /* 其余同上 */
+    /*---------------- 综合排序---------------- */
+    .ordering{
+        height: 52px;
+        border: 1px solid #d2d2d2;
+        margin-bottom: 24px;
+    }
+    .sort{
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+    }
+    .sort li{
+        padding: 16px;
+        border-left: 1px solid #dbdbdb;
+        color: #535353;
+        font-family: "SourceHanSansCN-Normal";
+    }
+    /*---------------- 内容 商品展示 车---------------- */
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content-car{
+        padding: 8px;
+        height: 240px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    /* 左边部分 */
+        .ccar-left{
+        width: 346px;
+        height: 224px;
+        float: left;
+        margin-right: 20px;
+    }
+    /* 中间部分 */
+    .ccar-center{
+        float: left;
+        width: 492px;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: left;
+        align-content: left;
+    }
+    .ccar-center h4{
+        font-family: "SourceHanSansCN-Bold";
+        font-size: 24px;
+        color: #646464;
+    }
+    .icon-words{
+        display: flex;
+        justify-content: space-between;
+        color: #6b6b6b;
+        letter-spacing: 1px;
+        font-family: "SourceHanSansCN-Medium";
+        font-size: 18px;
+    }
+    .space{
+        color: #cb9e4c;
+    }
+    .ccar-center p{
+        letter-spacing: 1px;
+        font-family: "SourceHanSansCN-Medium";
+        color: #6b6b6b;
+        font-size: 18px;
+    }
+    .ccar-center .browse{
+        color: #969696;
+        font-family: "SourceHanSansCN-Medium";
+        font-size: 18px;
+    }
+    /* 右边部分 */
+    .ccar-right{
+        float: left;
+        height: 100%;
+        width: 209px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .ccar-right .day{
+        font-family: "SourceHanSansCN-Regular";
+        font-size: 18px;
+        color: #fd640e;
+        margin-bottom: 10px ;
+    }
+    .ccar-right .day h5{
+        font-family: "SourceHanSansCN-Heavy";
+        font-size: 30px;
+        color: #fd640e;
+        display: inline-block;
+    }
+    .ccar-right .total{
+        color: #969696;
+        font-family: "SourceHanSansCN-Medium";
+        margin-bottom: 44px ;
+        font-size: 18px;
+    }
+    .ccar-right .reserve a{
+        display: inline-block;
+        width: 108px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        line-height: 42px;
+    }
+    /*---------------- 换页---------------- */
+.skip{
+    width: 402px;
+    height: 130px;
+    margin: 42px auto;
+    display: flex;
+    align-items: center;
+    }
+    .skip ul{
+    display: flex;
+    }
+    .skip li a{
+    display: inline-block;
+    border: 1px solid #d3d3d3;
+    width: 40px;
+    color: #9b9b9b;
+    font-size: 18px;
+    margin-right: 26px;
+    box-sizing: border-box;
+    line-height: 42px;
+    text-align: center;
+    }
+    .skip li:first-child a{
+    width: 88px;
+    }
+    .skip li:last-child a{
+    width: 88px;
+    }
+    .skip li:nth-child(2) a{
+    background-color: #fff;
+    }
+    .skip li a:hover{
+    background-color: #fff;
+    }
+    /* -- ----------------回到顶部---------------- --> */
+.back-top{
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    }
+    .back-top a{
+    display: inline-block;
+    width: 66px;
+    border-radius: 50%;
+    line-height: 66px;
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -8px 3px 7px 0px rgba(98, 98, 98, 0.5);
+    }
+    .back-top a:hover{
+    width: 90px;
+    height: 90px;
+    font-size: 20px;
+    line-height: 90px;
+    }
+
+    .wp-time,
+    .wp-content,
+    .wp-skip,
+    .wp-header{
+        display: none;
+    }
+
+}

@@ -1,0 +1,125 @@
+@media (min-width: 0px) and (max-width: 768px){
+    .servce-banner{
+        position: relative;
+        height: 150px;
+    }
+    .servce-banner a img{
+        position: absolute;
+        width: 100%;
+    }
+    .servce{
+        height: 410px;
+        padding: 22px 10px;
+        background: #f7f7f7;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: 200px 200px;
+        grid-gap: 14px;  
+    }
+    .servce-project{
+        width: 100%;
+        display: flex;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servce-project img{
+        width: 50%;
+    }
+    .servce-project p{
+        font-size: 18px;
+        font-weight: bold;
+        color: #999;
+    }
+    .servce-project>span{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 6px 10px;
+        color: #333;
+    }
+    .servce-project .need:last-child(){
+        display: block;
+    }
+    .servce-project:hover img{
+        transform: rotate3d(0, 10, 0, 342deg);
+        transition: 1s;
+    }
+    .footer_bg img{
+        width: 100%;
+    }
+    .need{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 768px){
+.servce-banner{
+    overflow: hidden;
+    margin-bottom: 50px;
+    width: 1150px;
+    margin: auto
+    }
+    .servce-banner img{
+    width: 100%;
+    }
+.servce{
+    /* width: 1150px; */
+    height: 259px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    }
+    .servce-project{
+        padding: 10px;
+        width: 181px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        }
+        .servce-project p{
+        font-size: 18px;
+        color: #333333;
+        font-weight: 900;
+        }
+        .servce-project span{
+        font-size: 14px;
+        color: #333333;
+        text-align: center;
+        }
+        .servce-project .need{
+        width: 96px;
+        height: 32px;
+        background-color: #f3f3f3;
+        border-radius: 6px;
+        border: solid 1px #e5e5e5;
+        text-align: center;
+        line-height: 32px;
+        }
+        .servce-project:hover p{
+        color: #ca9b44;
+        }
+        .servce-project:hover span{
+        color: #ca9b44;
+        }
+        .servce-project:hover .need{
+        background-color: #ca9b44;
+        color: #fff;
+        }
+        /* ----------------脚部背景模块---------------- */
+        .footer_bg{
+        width: 1150px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin: auto;
+        }
+        .footer_bg img{
+        height: 260px;
+        }
+        
+}

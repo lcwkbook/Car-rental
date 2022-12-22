@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国际租车</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/intercar.js"></script>
+    <script src="../js/place.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3663829_fhzuz8t857h.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/intercar.css">
+</head>
+<body>
+<!-- ----------------pc head模块---------------- -->
+<div class="header">
+    <div class="h-words contain">
+    <div class="h-logo">
+    <a href="../www/index.html"></a>
+    </div>
+    <div class="tubiao">
+    <ul class="h-title">
+    <li><a href="../www/index.html">首页</a></li>
+    <li><a style="color: #cf9257; font-size: 20px;" href="../www/intercar.html">国际租车</a></li>
+    <li><a href="../www/carFlash.html">闪租</a></li>
+    <li><a href="../www/carService.html">服务项目</a></li>
+    <li><a href="../www/about.html">关于我们</a></li>
+    </ul>
+</div>
+    <div class="h-login">
+        <a href="javascript:;"><div id="login" class="login">登录 / 注册</div></a>
+        <div class="login-phon">
+        <i class="fa fa-phone"></i>
+        <span class="h-pnum">400-088-800</span>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- ----------------pc head模块结束---------------- -->
+
+<!-- ----------------wp head模块---------------- -->
+<div class="wp-header">
+    <div class="wp-h-words wp-ontain">
+    <div class="wp-h-logo">
+    <a href="javascrpt:;"></a>
+    </div>
+</div> 
+<div class="navi">
+    <div class="navig">
+        <div class="navigation">
+            <div class="menuToggle"></div>
+            <div class="menu">
+                <ul>
+                    <li style="--i:0.1s;">
+                        <a href="../www/index.html">
+                            <ion-icon class="iconfont icon-icon_shouye">
+                                <span>首页</span>
+                            </ion-icon>
+                        </a>
+                    </li>
+                    <li style="--i:0.1s;">
+                        <a href="../www/intercar.html">
+                            <ion-icon class="iconfont icon-guojishangbiao">
+                                <span style="color: #ff216d;">国际租车</span>
+                            </ion-icon>
+                        </a>
+                    </li>
+                    <li style="--i:0.1s;">
+                        <div class="searchBox">
+                            <div class="search">
+                                <ion-icon><svg t="1664108619439" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5610" width="32" height="32"><path d="M422.588632 725.530947a292.217263 292.217263 0 0 1-159.232-44.705684 316.793263 316.793263 0 0 1-145.246316-192.727579 320.673684 320.673684 0 0 1 33.522526-237.433263 314.260211 314.260211 0 0 1 575.434105 81.00379 315.472842 315.472842 0 0 1-226.357894 382.652631 252.335158 252.335158 0 0 1-78.120421 11.210105z m0-572.631579a259.584 259.584 0 1 0 64.377263 511.191579 262.602105 262.602105 0 0 0 187.149473-315.634526 258.533053 258.533053 0 0 0-251.526736-195.530105z" fill="#208BB5" p-id="5611"></path><path d="M889.047579 859.621053a25.357474 25.357474 0 0 1-19.56379-8.380632l-156.294736-156.294737a27.648 27.648 0 0 1 39.100631-39.100631l156.294737 156.294736a26.947368 26.947368 0 0 1 0 39.100632 30.181053 30.181053 0 0 1-19.536842 8.380632z" fill="#83D2EA" p-id="5612"></path></svg></ion-icon>
+                            </div>
+                            <div class="searchInpt">
+                                <input type="text" placeholder="搜素您喜欢的爱车">
+                            </div>
+                            <div class="close">
+                                <ion-icon><svg t="1664036023967" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5996" width="32" height="32"><path d="M806.4 263.2l-45.6-45.6L512 467.2 263.2 217.6l-45.6 45.6L467.2 512 217.6 760.8l45.6 45.6L512 557.6l248.8 248.8 45.6-45.6L557.6 512z" p-id="5997" fill="#8a8a8a"></path></svg></ion-icon>
+                            </div>
+                        </div>
+                        <span id="sousuo">搜素车辆</span>
+                    </li>
+                    <li style="--i:0.1s;">
+                        <a href="../www/carService.html">
+                            <ion-icon class="iconfont icon-fuwu">
+                                <span>服务项目</span>
+                            </ion-icon>
+                        </a>
+                    </li>
+                    <li style="--i:0.1s;">
+                        <a href="../www/about.html">
+                            <ion-icon class="iconfont icon-guanyuwomen">
+                                <span>关于我们</span>
+                            </ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="wp-h-login">
+        <div class="wp-h-login-left">
+        <a href="javascript:;">
+            <ion-icon>
+                <svg t="1663946332424" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10391" width="32" height="32"><path d="M325.931707 364.643902a218.536585 217.287805 90 1 0 434.57561 0 218.536585 217.287805 90 1 0-434.57561 0Z" fill="#E3EFFF" p-id="10392"></path><path d="M754.263415 621.892683c3.746341-6.243902 1.24878-13.736585-4.995122-17.482927-54.946341-31.219512-116.136585-51.2-179.824391-58.692683C659.356098 513.24878 724.292683 428.331707 724.292683 327.180488 724.292683 199.804878 620.643902 96.156098 493.268293 96.156098S263.492683 199.804878 263.492683 327.180488c0 104.897561 69.931707 193.560976 166.087805 222.282927-186.068293 32.468293-337.170732 172.331707-380.878049 362.146341-1.24878 6.243902 2.497561 13.736585 8.741463 14.985366h2.497561c6.243902 0 11.239024-3.746341 12.487805-9.990244 47.453659-206.04878 228.526829-349.658537 439.570732-349.658537 78.673171 0 156.097561 19.980488 223.531707 58.692683 7.492683 3.746341 14.985366 1.24878 18.731708-3.746341zM288.468293 327.180488c0-113.639024 92.409756-206.04878 204.8-206.048781S699.317073 213.541463 699.317073 327.180488s-92.409756 206.04878-204.8 206.04878-206.04878-92.409756-206.04878-206.04878zM962.809756 779.239024h-111.141463v-111.141463c0-7.492683-4.995122-12.487805-12.487805-12.487805s-12.487805 4.995122-12.487805 12.487805v111.141463h-111.141463c-7.492683 0-12.487805 4.995122-12.487805 12.487805s4.995122 12.487805 12.487805 12.487805h111.141463v111.141464c0 7.492683 4.995122 12.487805 12.487805 12.487804s12.487805-4.995122 12.487805-12.487804v-111.141464h111.141463c7.492683 0 12.487805-4.995122 12.487805-12.487805s-6.243902-12.487805-12.487805-12.487805z" fill="#25232E" p-id="10393"></path></svg>
+            </ion-icon>
+            <div id="login" class="wp-login">登录 / 注册</div>
+        </a>
+        </div>
+        <div class="wp-h-login-right">
+        <a href="let:400-088-800">
+        <div class="wp-login-phon">
+        <li class="wp-fa fa-phone">
+            <svg t="1663945075033" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6157" width="64" height="64"><path d="M708.608 978.944H498.688l-32.768-17.408-399.36-555.008-7.168-30.72L94.208 163.84l18.432-27.648 138.24-91.136 56.32 10.24 153.6 218.112-10.24 57.344-63.488 45.056 216.064 293.888 74.752-40.96 53.248 12.288L839.68 797.696l-2.048 50.176-98.304 116.736-30.72 14.336z m-188.416-81.92h169.984l65.536-77.824-70.656-100.352-73.728 38.912-52.224-11.264-263.168-356.352 9.216-57.344 64.512-45.056-107.52-152.576-90.112 59.392L143.36 372.736l376.832 524.288z" fill="#437DFF" p-id="6158"></path><path d="M779.264 535.552l-36.864-49.152c24.576-18.432 40.96-45.056 46.08-75.776s-3.072-61.44-21.504-86.016c-18.432-24.576-45.056-40.96-75.776-46.08s-61.44 3.072-86.016 21.504l-36.864-49.152c37.888-27.648 84.992-39.936 132.096-32.768 47.104 6.144 88.064 30.72 116.736 68.608s39.936 84.992 32.768 132.096c-8.192 47.104-32.768 88.064-70.656 116.736z" fill="#63F7DE" p-id="6159"></path><path d="M845.824 626.688L808.96 577.536C911.36 501.76 933.888 358.4 858.112 256c-74.752-102.4-219.136-123.904-320.512-49.152L501.76 157.696c129.024-95.232 311.296-67.584 406.528 62.464 95.232 129.024 66.56 311.296-62.464 406.528z" fill="#63F7DE" p-id="6160"></path></svg>
+        </li>
+        <span class="wp-h-pnum">
+            400-088-800</span>
+    </div>
+    </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        let search = document.querySelector('.search');
+    let close = document.querySelector('.close');
+    let sousuo = document.querySelector('#sousuo');
+    let searchBox = document.querySelector('.searchBox');
+    search.onclick = function(){
+        searchBox.classList.add('active');
+        sousuo.style="display: none";
+    }
+    close.onclick = function(){
+        searchBox.classList.remove('active');
+        sousuo.style="display: block";
+    }
+    let menuToggle = document.querySelector('.menuToggle');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active');
+    }
+    </script>
+<!-- ----------------pc head模块结束---------------- -->
+
+<!-- 登录模块 -->
+<div class="dl">
+    <div id="box" class="boox">
+        <div class="box-login">
+            <div class="box-login-header">
+                <a class="qx" href="javascript:;"><svg t="1661432095549" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2372" width="16" height="16"><path d="M1004.032007 907.639505l-395.605202-395.605201 395.605202-395.673468c12.902396-12.902396 19.967993-30.037323 19.967993-48.298651 0-18.158927-7.099731-35.259722-19.93386-48.059717A67.583977 67.583977 0 0 0 955.938156 0.000341c-18.295461 0-35.430388 7.099731-48.298651 19.967994L512.000171 415.573536 116.360836 19.968335A67.720511 67.720511 0 0 0 68.164585 0.000341C49.971525 0.000341 32.87073 7.100072 19.968335 19.968335A67.549844 67.549844 0 0 0 0.000341 68.096319c0 18.227194 7.065598 35.362122 19.967994 48.264517l395.673468 395.673468L19.968335 907.605372A67.720511 67.720511 0 0 0 0.000341 955.835756c0 18.193061 7.099731 35.327988 19.967994 48.196251 12.902396 12.868262 30.00319 19.967993 48.19625 19.967993 18.193061 0 35.327988-7.099731 48.196251-19.967993l395.673468-395.605202 395.605201 395.605202c12.868262 12.868262 30.037323 19.967993 48.230384 19.967993 18.227194 0 35.293855-7.099731 48.127984-19.93386a68.266644 68.266644 0 0 0 0-96.426635z" p-id="2373" fill="#9ea1b0"></path></svg></a>
+            </div>
+            <div class="box-login-inner">
+                <div class="box-login-content-wx">
+                    <div class="box-login-scancode-content">
+                        <div class="box-login-scancode-content-textwrap">
+                            <p class="login-register">微信快捷登录</p>
+                        </div>
+                        <div class="box-login-scancode-content-qrwrap">
+                            <img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFg7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWUQteWtjUThibmUxZF9ZSzF6Y0gAAgR-bwdjAwQAjScA" alt="">
+                        </div>
+                        <p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA2CAMAAABHjrElAAAAOVBMVEVHcEwsu4osuYkuu4s7x5Qxv5AsuokvvYwsuYksuYksuYksuYksuoosuYosuYotuoosuoksuoosuYnQvz8EAAAAEnRSTlMATNU4CBOpI/fsxuJ6nLhbj2n4OhRMAAAB/0lEQVQYGaXBB5KjMAAEwFHOEsz/H3tgwDYmaeu68UtlW2XwQUabFf5I2MBvvgr0a5JHctToIhLPJYFneuA1a/DASd6RDrdc4L2kcMMlPgkOl4zkM6lxpbCHxQXFTbCRO95Wz03DKS25igYQ/JIc4AJXEqcaNwqTyo8Rk8xNw5nKjcFk4IfApHEjccLwTWAS+ZExKXxzOBr5lhT0wC9eAI0fI44KvyTPvRD45lPBUWWHmJUzOCX5JDYDI8ZcrB1G4bDneS8KuBz5IbPDF887vsFZ/qoKb4k3otOFZ6zDKvKa1SrxXBBYDLxU0Tyv+IyXxitRC94ZMTOe54IRnovAb4ErgZnludEEvlQDJ7mpBi7yxTtMFE9FFL4EA8Bx5Q0Ax0XFrPKMUlxUzAIXEbPEhcDEBB4lFC4SJpqrgIn2XETMBI8G7bnKAAo3GcDAjcGs8EA1vsUi+RGL5NuImbb8pQf2sFgU7gVY9ohYZe5IRPYIWBnuVCT28Fg17kRI9ghYFe5IVPaQWCXOahskX/TAHhYLx4kfMTFizENxgj1GLEaS0eGLDnzmDRaFPmNv4DOLVbMKP5znI4UbA58U3NGJ95LGLRd4S+GB8LzmBR6pwCteoYOTvJDRJweesuhkhsA9H0gGdNPNJm5CEdpYkgp/4cSYh9yUw0sLzPgfrmbM/gH8Ao9MzJZr5gAAAABJRU5ErkJggg==" alt="">
+                            扫码关注租租车公众号登录
+                        </p>
+                    </div> 
+                </div>
+                <div class="box-login-middle-line">
+                    <div class="social_loginbar">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="box-login-footer">
+                <div class="box-login-content-login">
+                    <a href="JavaScrpt:;">手机号或邮箱登录</a>
+                </div>
+                <div class="box-login-content-qt">
+                    <a title="QQ登录" href="localhost/oauth/qq?rurl=localhost">
+                    <i class="fa"><svg t="1661434472158" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4893" width="16" height="16"><path d="M512 1002.666667c270.997333 0 490.666667-219.669333 490.666667-490.666667S782.997333 21.333333 512 21.333333 21.333333 241.002667 21.333333 512s219.669333 490.666667 490.666667 490.666667z m0 21.333333C229.226667 1024 0 794.773333 0 512S229.226667 0 512 0s512 229.226667 512 512-229.226667 512-512 512z" fill="#41B3EF" p-id="4894"></path><path d="M733.034667 666.56c-20.096 1.856-23.530667-27.093333-37.013334-35.690667-5.674667 28.16-19.306667 48.256-38.464 63.061334 17.962667 13.76 51.029333 18.24 49.301334 48-1.834667 36.224-67.690667 45.866667-115.285334 42.56-34.901333-2.517333-55.658667-15.189333-75.498666-28.8-10.965333 3.946667-22.464 14.4-34.218667 19.285333-48.661333 20.096-154.837333 12.032-159.061333-31.466667-2.901333-30.933333 32-36.352 50.773333-49.322666-19.434667-13.994667-34.133333-32.512-38.485333-61.738667-14.144 3.84-17.301333 34.922667-37.013334 34.24-20.906667-0.64-24.064-44.010667-21.952-71.253333 3.2-41.92 33.578667-74.432 49.322667-96-0.789333-23.658667 0.789333-45.077333 10.965333-57.493334 0.405333-61.077333 21.546667-97.045333 52.096-127.573333 30.933333-30.933333 77.866667-54.357333 124.8-54.741333 56.064-0.661333 100.096 26.709333 127.573334 53.546666 24.618667 24.064 40.597333 49.706667 48 87.786667 2.389333 11.370667 0.810667 25.386667 3.989333 39.786667 1.322667 5.952 7.658667 12.288 9.514667 20.48 2.496 10.581333-1.322667 23.68 1.322666 35.712 1.834667 9.130667 10.304 15.872 15.061334 21.952 13.482667 17.322667 31.466667 45.866667 34.24 72.704 3.712 29.482667-0.64 73.386667-19.968 74.965333" fill="#45B6F1" p-id="4895"></path></svg>
+                    </i>
+                </a>
+                <a title="支付宝" href="localhost/oauth/alipay?rurl=localhost">
+                    <i class="fa"><svg t="1661434953236" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10517" width="32" height="32"><path d="M511.86438 1023.999066A511.965648 511.965648 0 0 1 312.614101 40.496179 511.996028 511.996028 0 0 1 711.125911 983.761942a508.680066 508.680066 0 0 1-199.261531 40.237124z m0-984.346786a472.583675 472.583675 0 0 0-183.913814 907.844491A472.611805 472.611805 0 0 0 695.766941 76.772602 469.500629 469.500629 0 0 0 511.86438 39.65228z" p-id="10518" fill="#41B3EF"></path><path d="M299.696814 312.524344h412.2955v39.381973H299.696814zM938.11235 767.284863c-126.551157-37.525394-238.238432-83.737326-333.05897-137.791897a327.815542 327.815542 0 0 1-89.464591 69.571068c-11.668316 6.177344-38.988153 20.61365-74.510693 30.054071-44.917953 11.870852-88.148107 12.073388-128.486499 0.573852-25.620786-7.302543-78.921474-22.503985-99.613888-72.834146-21.378785-52.119228 9.069106-102.134334 12.613484-107.670314 35.455028-55.29229 103.315793-61.514642 125.617241-63.551252 93.143992-8.562766 169.488759 43.196398 202.097033 65.295311l3.094298 2.09287q19.229655 12.996051 39.685777 25.474511a365.160905 365.160905 0 0 0 39.381973-67.962034 342.746936 342.746936 0 0 0 23.201608-70.021147H330.696052v-39.381973h374.387539l-3.375598 22.582748a383.906724 383.906724 0 0 1-30.380379 103.180769 404.430358 404.430358 0 0 1-41.069772 71.618931C721.252704 649.667788 828.14663 693.606817 949.308083 729.534429z m-565.97521-243.268073c-5.70476 0-11.46578 0.247544-17.328068 0.78764-19.499703 1.777815-71.033827 6.503652-96.103266 45.604324-0.967671 1.496515-23.415396 37.131574-9.339154 71.438899 13.434879 32.630778 52.816852 43.88277 73.981849 49.936342 33.440921 9.530437 69.649832 9.26039 107.636558-0.776388 31.201775-8.24771 54.84221-20.737422 66.206723-26.745985a287.724694 287.724694 0 0 0 73.13795-55.326046q-18.487023-11.420772-36.006376-23.26912l-3.150558-2.126627c-29.210172-19.82601-87.743036-59.511787-159.091918-59.511787z" p-id="10519" fill="#41B3EF"></path><path d="M481.799056 249.018099h39.381973v171.795418h-39.381973z" p-id="10520" fill="#41B3EF"></path></svg>
+                    </i>
+                </a>
+                </div>
+            </div>
+            <div class="box-user-agreement">
+                <p>
+                    <label>
+                        <input type="checkbox" value="1" class="global-login-form-checkbox" tabindex="4">
+                        我已阅读并同意
+                    </label>
+                    <a href="">《用户协议》</a>
+                    <a href="">《租车规则》</a>及
+                    <a href="">《隐私政策》</a>
+                </p>
+            </div>
+        </div>
+        <div class="box-register">
+            <div class="box-login-header">
+                <a class="qx" href="javascript:;"><svg t="1661432095549" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2372" width="16" height="16"><path d="M1004.032007 907.639505l-395.605202-395.605201 395.605202-395.673468c12.902396-12.902396 19.967993-30.037323 19.967993-48.298651 0-18.158927-7.099731-35.259722-19.93386-48.059717A67.583977 67.583977 0 0 0 955.938156 0.000341c-18.295461 0-35.430388 7.099731-48.298651 19.967994L512.000171 415.573536 116.360836 19.968335A67.720511 67.720511 0 0 0 68.164585 0.000341C49.971525 0.000341 32.87073 7.100072 19.968335 19.968335A67.549844 67.549844 0 0 0 0.000341 68.096319c0 18.227194 7.065598 35.362122 19.967994 48.264517l395.673468 395.673468L19.968335 907.605372A67.720511 67.720511 0 0 0 0.000341 955.835756c0 18.193061 7.099731 35.327988 19.967994 48.196251 12.902396 12.868262 30.00319 19.967993 48.19625 19.967993 18.193061 0 35.327988-7.099731 48.196251-19.967993l395.673468-395.605202 395.605201 395.605202c12.868262 12.868262 30.037323 19.967993 48.230384 19.967993 18.227194 0 35.293855-7.099731 48.127984-19.93386a68.266644 68.266644 0 0 0 0-96.426635z" p-id="2373" fill="#9ea1b0"></path></svg></a>
+            </div>
+            <div class="zhuce">
+                <form action="#" class="sign-up-form">
+            <p class="login-register">手机号快捷注册</p>
+            <div class="input-field">
+            <i class="iconfont icon-yiliaohangyedeICON-"></i>
+            <input type="text" placeholder="手机号" />
+            </div>
+            <div class="input-field">
+            <i class="iconfont icon-yanzhengma"></i>
+            <input type="text"  v-model="datalist.vCode" maxlength="6" @input="getClick" oninput="value=value.replace(/[^\d]/g,'')" placeholder="请输入验证码" v-blur-event/>
+            <input type="button" value="获取验证码" name="key" id="key">
+            </div>
+            <div class="input-field">
+            <i class="iconfont icon-mima"></i>
+            <input type="password" placeholder="密码" />
+            </div>
+            <input type="submit" class="btn" value="登录" />
+            <p class="ts">手机号登录及注册</p>
+        </form>
+                <div class="box-register-footer">
+                <div class="box-register-content-login">
+                    <a href="JavaScrpt:;">快捷登录</a>
+                </div>
+            </div>
+            </div>
+            <div class="box-user-agreement">
+                <p>
+                    <label>
+                        <input type="checkbox" value="1" class="global-login-form-checkbox" tabindex="4">
+                        我已阅读并同意
+                    </label>
+                    <a href="">《用户协议》</a>
+                    <a href="">《租车规则》</a>及
+                    <a href="">《隐私政策》</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 登录模块结束 -->
+
+<!-- ----------------banner模块---------------- -->
+<div class="banner">
+    <img src="../images/banner.png" alt="卡卡组合，国际租车">
+</div>
+<!-- ----------------banner模块结束---------------- -->
+
+<!-- ----------------pc取还时间---------------- -->
+<div class="time">
+    <div class="t-date contain">
+    <!-- 取车的地点 -->
+        <div class="td-position">
+            <div class="p-pick-car">
+                <div class="pick-car">取车</div>
+                <select id="city" onChange="move()">
+    <!-- 根据id获取value，onchange（）触发函数move（）修改二
+    级select的text值实现联动 -->
+                    <option selected value="city">-- 租车的城市 --
+                    </option>
+    <!--默认选中-->
+                    <option value="成都">成都</option>
+                </select>
+                <select id="county">
+                    <option selected>-- 租车地点 --</option>
+    <!--默认选中，动态生成option -->
+                </select>
+            </div>
+    <div class="p-pick-car">
+    <div class="pick-car">还车</div>
+    <select id="city" onChange="move()">
+    <!-- 根据id获取value，onchange（）触发函数move（）修改二
+    级的text值实现联动 -->
+    <option selected value="city">-- 租车的城市 --
+    </option>
+    <!--默认选中-->
+    <option value="成都">成都</option>
+    </select><select id="county">
+    <option selected>-- 租车地点 --</option>
+    <!--默认选中，动态生成option -->
+    </select>
+    </div>
+    </div>
+    <!-- 取车的时间 -->
+    <div class="td-time">
+    <div class="td-time-pick">
+    <div class="td-time-car">取车时间</div>
+    <input type="date" class="inputdate">
+    <select id="clock">
+        <option value="9">09:00</option>
+        <option value="10">10:00</option>
+        </select>
+        </div>
+        <div class="td-time-back">
+        <div class="td-time-car">取车时间</div>
+        <input type="date" class="inputdate">
+        <select id="clock">
+        <option value="15">15:00</option>
+        <option value="16">16:00</option>
+        </select>
+        </div>
+        </div>
+        <!-- 是否租车 -->
+        <div class="td-term">
+        <h4>短期:<span>2天</span>，不限里程</h4>
+        <div class="td-term-car">立即选车</div>
+        </div>
+        </div>
+        </div>
+<!-- ----------------pc取还时间结束---------------- -->
+
+<!-- ----------------wp取还时间---------------- -->
+<div class="wp-time">
+    <div class="wp-t-date wp-contain" id="form_con">
+    <!-- 取车的地点 -->
+    <div class="wp-td-position">
+        <div class="wp-p-pick-car form_item">
+            <p>取车城市</p>
+            <div class="chengshi">
+            <select class="province" name="province" id="param_province" onchange="provincechange()">
+            <option selected value="city"></option>
+            </select>
+            <svg t="1661521443561" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13265" width="20" height="20"><path d="M511.711 671.589l-270.188-270.23c-0.287-0.264-0.573-0.531-0.851-0.809-10.935-10.935-10.935-28.663 0-39.598 10.935-10.935 28.663-10.935 39.598 0 0.278 0.278 0.545 0.564 0.809 0.851l0.021-0.021 230.691 230.69 231.94-231.94c10.935-10.935 28.663-10.935 39.598 0s10.935 28.663 0 39.598l-271.617 271.459z" p-id="13266" fill="#707070"></path></svg>
+        </div>
+        </div>
+        <div class="wp-p-pick-car form_tem">
+            <p>取车地点</p>
+            <select class="city province" name="city" id="param_city">
+            <option selected>租车地点</option>
+            <!--默认选中，动态生成option -->
+            </select>
+        </div>
+        <div class="wp-p-pick-car wp-car-pi">
+            <div class="ydhc">
+                <p>异地还车</p>
+            </div>
+            <div class="anniu">
+                <div class="switch-btn">
+                    <a href="javascrpit:;"></a>
+                </div>
+            </div>
+    </div>
+    <span class="xian"></span>
+</div>
+<div class="hc">
+    <div class="wp-td-position form_group">
+            <div class="wp-p-pick-car form_item">
+                <p>还车城市</p>
+                <div class="chengshi">
+            <select class="province" name="province" id="param_province" onchange="provincechange()">
+            <option selected value="city">还车城市</option>
+            </select>
+            <svg t="1661521443561" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13265" width="20" height="20"><path d="M511.711 671.589l-270.188-270.23c-0.287-0.264-0.573-0.531-0.851-0.809-10.935-10.935-10.935-28.663 0-39.598 10.935-10.935 28.663-10.935 39.598 0 0.278 0.278 0.545 0.564 0.809 0.851l0.021-0.021 230.691 230.69 231.94-231.94c10.935-10.935 28.663-10.935 39.598 0s10.935 28.663 0 39.598l-271.617 271.459z" p-id="13266" fill="#707070"></path></svg>
+        </div>
+        </div>
+            <div class="wp-p-pick-car form_tem">
+                <p>还车地点</p>
+                <select class="city province" name="city" id="huan_city">
+                <option selected>还车地点</option>
+                <!--默认选中，动态生成option -->
+                </select>
+            </div>
+        <span class="xian"></span>
+    </div>
+</div>
+    <!-- 取车的时间 -->
+    <div class="wp-td-time">
+    <div class="wp-td-time-pick time-pick">
+    <div class="wp-td-time-car">
+    <input type="date" class="wp-inputdate">
+    <select class="clock" id="wp-lock">
+        <option value="9">09:00</option>
+        <option value="10">10:00</option>
+        </select>
+        </div>
+        </div>
+        <div class="wp-td-time-pick wp-time">
+            <div>
+                <p>2天</p>
+                <div class="botton-arrow-container">
+                    <samp class="botton-arrow-triangle"></samp>
+                </div>
+            </div>
+        </div>
+        <div class="wp-td-time-pick time-pick">
+        <div class="wp-td-time-car wp-time-car">
+        <input type="date" class="wp-inputdate">
+        <select class="clock" id="wp-clock">
+        <option value="15">15:00</option>
+        <option value="16">16:00</option>
+        </select>
+        </div>
+        </div>
+        <span class="xian"></span>
+        </div>
+        <!-- 是否租车 -->
+        <div class="wp-td-term">
+        <div class="wp-td-term-car">立即选车</div>
+        </div>
+        </div>
+        </div>
+<!-- ----------------wp取还时间结束---------------- -->
+<!-- ----------------pc车型组---------------- -->
+<div class="car-style contain">
+    <span class="cs-words">
+    车型组
+    </span>
+    <ul>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>热门车型</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>越野车</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>大客车</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>商务车</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>跑车</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <div class="img"></div>
+    <span>个性车</span>
+    </a>
+    </li>
+    <!-- 剩余车型同上 -->
+    </ul>
+    </div>
+
+<!-- ----------------车辆座位---------------- -->
+<div class="car-seats contain">
+    <ul>
+    <li>
+    车辆座位
+    </li>
+    <li>
+    <label class="c-seats" for="seacts1">
+    <input type="checkbox" id="seacts1">
+    <span>不限</span>
+    </label>
+    </li>
+    <li>
+    <label class="c-seats" for="seacts2">
+    <input type="checkbox" id="seacts2">
+    <span>五座及以下</span>
+    </label>
+    </li>
+    <li>
+    <label class="c-seats" for="seacts3">
+    <input type="checkbox" id="seacts3">
+    <span>五座及以上</span>
+    </label>
+    </li>
+    </ul>
+    </div>
+<!-- ----------------品牌---------------- -->
+<div class="car-brand contain">
+    <span class="check-brand">指定品牌</span>
+    <label class="cb-brand" for="no-brand">
+        <input type="checkbox" id="no-brand" class="hw">
+        <span>不限</span>
+        </label>
+        <ul class="dif-brand">
+        <li>
+        <ul class="first">
+        <li>
+        <label class="cb-brand" for="brand1">
+        <input type="checkbox" id="brand1" class="hw">
+        <span>宝马</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand2">
+        <input type="checkbox" id="brand2" class="hw">
+        <span>奥迪</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand3">
+        <input type="checkbox" id="brand3" class="hw">
+        <span>特斯拉</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand4">
+        <input type="checkbox" id="brand4" class="hw">
+        <span>法拉利</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand5">
+        <input type="checkbox" id="brand5" class="hw">
+        <span>奔驰</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand6">
+        <input type="checkbox" id="brand6" class="hw">
+        <span>保时捷</span>
+        </label>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <ul class="second">
+        <li>
+        <label class="cb-brand" for="brand1">
+        <input type="checkbox" id="brand1" class="hw">
+        <span>宝马</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand2">
+        <input type="checkbox" id="brand2" class="hw">
+        <span>奥迪</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand3">
+        <input type="checkbox" id="brand3" class="hw">
+        <span>特斯拉</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand4">
+        <input type="checkbox" id="brand4" class="hw">
+        <span>法拉利</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand5">
+        <input type="checkbox" id="brand5" class="hw">
+        <span>奔驰</span>
+        </label>
+        </li>
+        <li>
+        <label class="cb-brand" for="brand6">
+        <input type="checkbox" id="brand6" class="hw">
+        <span>保时捷</span>
+        </label>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        
+<!-- ----------------综合排序---------------- -->
+<div class="ordering contain">
+    <ul class="sort">
+    <li>
+    <label class="cb-brand" for="sort1">
+    <input type="checkbox" id="sort1" class="hw">
+    <span>综合排序</span>
+    </label>
+    </li>
+    <li>
+    <label class="cb-brand" for="sort2">
+    <input type="checkbox" id="sort2" class="hw">
+    <span>价格由高到底</span>
+    </label>
+    </li>
+    <li>
+    <label class="cb-brand" for="sort3">
+    <input type="checkbox" id="sort3" class="hw">
+    <span>免押金</span>
+    </label>
+    </li>
+    <li>
+    <label class="cb-brand" for="sort4">
+    <input type="checkbox" id="sort4" class="hw">
+    <span>不无优租限</span>
+    </label>
+    </li>
+    <li>
+    <label class="cb-brand" for="sort5">
+    <input type="checkbox" id="sort5" class="hw">
+    <span>自动挡</span>
+    </label>
+    </li>
+    <!-- 剩下同上 -->
+    </ul>
+    </div>
+    
+<!-- ----------------pc内容 商品展示 车---------------- -->
+<div class="content contain">
+    <a href="./carDetails.html">
+    <!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/red-car.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car2.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car3.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car4.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car5.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car6.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car7.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+
+    <a href="./carDetails.html">
+    <div class="content-car box">
+    <!-- 左边模块 -->
+    <div class="ccar-left">
+    <img src="../images/car3.png" alt="">
+    </div>
+    <!-- 中间模块 -->
+    <div class="ccar-center">
+    <h4>小型轿车 | 奥迪A6L</h4>
+    <div class="icon-words">
+    <div class="car-type">
+    <i class="fa fa-car"></i>
+    <span>小型车</span>
+    </div>
+    <div class="car-seat">
+        <i class="fa fa-wheelchair"></i>
+        <span>4门5座</span>
+        </div>
+        <div class="car-type">
+        <i class="fa fa-clock-o"></i>
+        <span>1.4L</span>
+        </div>
+        <div class="space">
+        <i class="fa fa-thumbs-o-up"></i>
+        <span>空间较大，乘坐舒适</span>
+        </div>
+        <span></span>
+        </div>
+        <p>空间：空间较大，建议乘坐5人+3行李箱</p>
+        <span class="browse">30人正在浏览该车 | 最新预定：1分钟前
+        </span>
+        </div>
+        <!-- 右边模块 -->
+        <div class="ccar-right">
+        <span class="day">￥<h5>317</h5>/天</span>
+        <span class="total">总价：636元</span>
+        <div class="reserve">
+        <a href="../www/carDetails.html" class="wp-button">
+        预定
+        </a>
+        </div>
+        </div>
+        </div>
+        <!-- 后面车辆复制上方结构 -->
+        </a>
+        </div>
+
+<!-- ----------------wp内容 商品展示 车---------------- -->
+<div class="wp-content wp-contain">
+<a class="cqc" href="./carDetails.html" title="空间较大，乘坐舒适">
+<!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+<div class="wp-content-car wp-box">
+<!-- 左边模块 -->
+<div class="wp-ccar-left">
+<img src="../images/red-car.png" alt="">
+</div>
+<!-- 中间模块 -->
+<div class="wp-ccar-center">
+    <div class="pingpai">
+        <svg t="1661570594134" class="icon qian" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7677" width="32" height="32"><path d="M1006.344828 195.972414H123.586207c-10.593103 0-17.655172-7.062069-17.655173-17.655173s7.062069-17.655172 17.655173-17.655172h882.758621c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7678"></path><path d="M579.089655 919.834483c-3.531034 0-7.062069-1.765517-8.827586-3.531035L247.172414 706.206897c-5.296552-3.531034-8.827586-8.827586-8.827586-14.124138v-512c0-10.593103 7.062069-17.655172 17.655172-17.655173s17.655172 7.062069 17.655172 17.655173v503.172413L577.324138 882.758621l284.248276-199.503449V178.317241c0-10.593103 7.062069-17.655172 17.655172-17.655172s17.655172 7.062069 17.655173 17.655172v512c0 5.296552-3.531034 10.593103-7.062069 14.124138l-300.137931 211.862069c-3.531034 1.765517-7.062069 3.531034-10.593104 3.531035z" fill="#3164AF" p-id="7679"></path><path d="M391.944828 540.248276h-31.779311V388.413793h31.779311v60.027586h58.262069V388.413793h33.544827v153.6h-31.77931v-67.089655h-58.262069v65.324138zM579.089655 542.013793c-47.668966-1.765517-72.386207-26.482759-74.151724-77.682759 1.765517-52.965517 26.482759-79.448276 74.151724-79.448275 47.668966 1.765517 70.62069 28.248276 72.386207 79.448275 0 51.2-24.717241 77.682759-72.386207 77.682759z m0-134.17931c-26.482759 0-38.841379 19.42069-38.841379 56.496551s12.358621 54.731034 38.841379 54.731035c24.717241 0 38.841379-17.655172 38.841379-54.731035s-12.358621-56.496552-38.841379-56.496551zM663.834483 413.131034V388.413793h123.586207v26.482759H741.517241v127.117241h-33.544827v-127.117241h-44.137931z" fill="#2D5FA4" p-id="7680"></path><path d="M787.42069 642.648276H360.165517c-10.593103 0-17.655172-7.062069-17.655172-17.655173s7.062069-17.655172 17.655172-17.655172h427.255173c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7681"></path></svg>
+<h4>奥迪A6L</h4>
+<svg t="1661570486291" class="icon" viewBox="0 0 1058 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7424" width="48" height="48"><path d="M137.941126 147.616721l-127.535297 320.937666a39.432614 39.432614 0 0 0 2.519306 34.320979l286.178546 495.682565a39.432614 39.432614 0 0 0 53.854728 14.458625l469.248109-270.916664a39.432614 39.432614 0 0 0 14.422113-53.891239L550.450085 192.526088a39.432614 39.432614 0 0 0-28.442599-19.351191l-341.712811-50.021001a39.432614 39.432614 0 0 0-42.353549 24.462825z" fill="#FFC7CE" p-id="7425"></path><path d="M273.253412 51.51798l-128.959253 354.966551c-4.016285 10.953504-2.920934 23.075382 2.920934 33.189117l325.976277 564.616617a39.432614 39.432614 0 0 0 53.854728 14.422114l500.867224-289.172505a39.432614 39.432614 0 0 0 14.422113-53.854727L716.359158 111.06853a39.432614 39.432614 0 0 0-27.274225-19.13212L317.213474 26.178874a39.432614 39.432614 0 0 0-43.960062 25.339106z" fill="#FF6073" p-id="7426"></path><path d="M456.395998 273.837599m-91.2792 0a91.2792 91.2792 0 1 0 182.558399 0 91.2792 91.2792 0 1 0-182.558399 0Z" fill="#FFFFFF" p-id="7427"></path></svg>
+</div>
+<div class="icon-words">
+<div class="car-type">
+<i class="wp-fa wp-fa-car"></i>
+<span>小型车&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-wheelchair"></i>
+<span>5座&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-clock-o"></i>
+<span>1.4L</span>
+</div>
+<!-- <div class="space">
+<i class="fa fa-thumbs-o-up"></i>
+<span>空间较大，乘坐舒适</span>
+</div> -->
+<span></span>
+</div>
+</div>
+<!-- <p>空间：空间较大，建议乘坐5人+3行李箱</p> -->
+<!-- 右边模块 -->
+<span class="xian"></span>
+</a>
+<div class="wp-ccar-right">
+    <div class="wz">
+    <span class="browse">30人正在浏览该车</span>
+    <span class="borwse browses">最新预定：1分钟前</span>
+    </div>
+<div class="reserve">
+<a class="wp-button">
+<span class="day">￥<h5>317</h5>/天</span>
+<span class="total">总价：636元</span>
+</a>
+<svg t="1661572706436" class="icon jr" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8875" width="64" height="64"><path d="M709.845333 250.346667a22.4 22.4 0 0 1 0.533334-30.848 20.48 20.48 0 0 1 29.717333 0.64l272.426667 292.693333-272.426667 292.650667a20.458667 20.458667 0 0 1-29.717333 0.64c-8.32-8.32-8.746667-21.973333-0.533334-30.848l242.346667-262.464-242.346667-262.464z" fill="#707070" p-id="8876"></path></svg>
+</div>
+</div>
+</div>
+<!-- 后面车辆复制上方结构 -->
+</div>
+<div class="wp-content wp-contain">
+<a class="cqc" href="./carDetails.html" title="空间较大，乘坐舒适">
+<!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+<div class="wp-content-car wp-box">
+<!-- 左边模块 -->
+<div class="wp-ccar-left">
+<img src="../images/car4.png" alt="">
+</div>
+<!-- 中间模块 -->
+<div class="wp-ccar-center">
+    <div class="pingpai">
+        <svg t="1661570594134" class="icon qian" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7677" width="32" height="32"><path d="M1006.344828 195.972414H123.586207c-10.593103 0-17.655172-7.062069-17.655173-17.655173s7.062069-17.655172 17.655173-17.655172h882.758621c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7678"></path><path d="M579.089655 919.834483c-3.531034 0-7.062069-1.765517-8.827586-3.531035L247.172414 706.206897c-5.296552-3.531034-8.827586-8.827586-8.827586-14.124138v-512c0-10.593103 7.062069-17.655172 17.655172-17.655173s17.655172 7.062069 17.655172 17.655173v503.172413L577.324138 882.758621l284.248276-199.503449V178.317241c0-10.593103 7.062069-17.655172 17.655172-17.655172s17.655172 7.062069 17.655173 17.655172v512c0 5.296552-3.531034 10.593103-7.062069 14.124138l-300.137931 211.862069c-3.531034 1.765517-7.062069 3.531034-10.593104 3.531035z" fill="#3164AF" p-id="7679"></path><path d="M391.944828 540.248276h-31.779311V388.413793h31.779311v60.027586h58.262069V388.413793h33.544827v153.6h-31.77931v-67.089655h-58.262069v65.324138zM579.089655 542.013793c-47.668966-1.765517-72.386207-26.482759-74.151724-77.682759 1.765517-52.965517 26.482759-79.448276 74.151724-79.448275 47.668966 1.765517 70.62069 28.248276 72.386207 79.448275 0 51.2-24.717241 77.682759-72.386207 77.682759z m0-134.17931c-26.482759 0-38.841379 19.42069-38.841379 56.496551s12.358621 54.731034 38.841379 54.731035c24.717241 0 38.841379-17.655172 38.841379-54.731035s-12.358621-56.496552-38.841379-56.496551zM663.834483 413.131034V388.413793h123.586207v26.482759H741.517241v127.117241h-33.544827v-127.117241h-44.137931z" fill="#2D5FA4" p-id="7680"></path><path d="M787.42069 642.648276H360.165517c-10.593103 0-17.655172-7.062069-17.655172-17.655173s7.062069-17.655172 17.655172-17.655172h427.255173c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7681"></path></svg>
+<h4>奥迪A6L</h4>
+<svg t="1661570486291" class="icon" viewBox="0 0 1058 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7424" width="48" height="48"><path d="M137.941126 147.616721l-127.535297 320.937666a39.432614 39.432614 0 0 0 2.519306 34.320979l286.178546 495.682565a39.432614 39.432614 0 0 0 53.854728 14.458625l469.248109-270.916664a39.432614 39.432614 0 0 0 14.422113-53.891239L550.450085 192.526088a39.432614 39.432614 0 0 0-28.442599-19.351191l-341.712811-50.021001a39.432614 39.432614 0 0 0-42.353549 24.462825z" fill="#FFC7CE" p-id="7425"></path><path d="M273.253412 51.51798l-128.959253 354.966551c-4.016285 10.953504-2.920934 23.075382 2.920934 33.189117l325.976277 564.616617a39.432614 39.432614 0 0 0 53.854728 14.422114l500.867224-289.172505a39.432614 39.432614 0 0 0 14.422113-53.854727L716.359158 111.06853a39.432614 39.432614 0 0 0-27.274225-19.13212L317.213474 26.178874a39.432614 39.432614 0 0 0-43.960062 25.339106z" fill="#FF6073" p-id="7426"></path><path d="M456.395998 273.837599m-91.2792 0a91.2792 91.2792 0 1 0 182.558399 0 91.2792 91.2792 0 1 0-182.558399 0Z" fill="#FFFFFF" p-id="7427"></path></svg>
+</div>
+<div class="icon-words">
+<div class="car-type">
+<i class="wp-fa wp-fa-car"></i>
+<span>小型车&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-wheelchair"></i>
+<span>5座&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-clock-o"></i>
+<span>1.4L</span>
+</div>
+<!-- <div class="space">
+<i class="fa fa-thumbs-o-up"></i>
+<span>空间较大，乘坐舒适</span>
+</div> -->
+<span></span>
+</div>
+</div>
+<!-- <p>空间：空间较大，建议乘坐5人+3行李箱</p> -->
+<!-- 右边模块 -->
+<span class="xian"></span>
+</a>
+<div class="wp-ccar-right">
+    <div class="wz">
+    <span class="browse">30人正在浏览该车</span>
+    <span class="borwse browses">最新预定：1分钟前</span>
+    </div>
+<div class="reserve">
+<a class="wp-button">
+<span class="day">￥<h5>317</h5>/天</span>
+<span class="total">总价：636元</span>
+</a>
+<svg t="1661572706436" class="icon jr" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8875" width="64" height="64"><path d="M709.845333 250.346667a22.4 22.4 0 0 1 0.533334-30.848 20.48 20.48 0 0 1 29.717333 0.64l272.426667 292.693333-272.426667 292.650667a20.458667 20.458667 0 0 1-29.717333 0.64c-8.32-8.32-8.746667-21.973333-0.533334-30.848l242.346667-262.464-242.346667-262.464z" fill="#707070" p-id="8876"></path></svg>
+</div>
+</div>
+</div>
+<!-- 后面车辆复制上方结构 -->
+</div>
+<div class="wp-content wp-contain">
+<a class="cqc" href="./carDetails.html" title="空间较大，乘坐舒适">
+<!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+<div class="wp-content-car wp-box">
+<!-- 左边模块 -->
+<div class="wp-ccar-left">
+<img src="../images/car.jpg" alt="">
+</div>
+<!-- 中间模块 -->
+<div class="wp-ccar-center">
+    <div class="pingpai">
+        <svg t="1661570594134" class="icon qian" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7677" width="32" height="32"><path d="M1006.344828 195.972414H123.586207c-10.593103 0-17.655172-7.062069-17.655173-17.655173s7.062069-17.655172 17.655173-17.655172h882.758621c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7678"></path><path d="M579.089655 919.834483c-3.531034 0-7.062069-1.765517-8.827586-3.531035L247.172414 706.206897c-5.296552-3.531034-8.827586-8.827586-8.827586-14.124138v-512c0-10.593103 7.062069-17.655172 17.655172-17.655173s17.655172 7.062069 17.655172 17.655173v503.172413L577.324138 882.758621l284.248276-199.503449V178.317241c0-10.593103 7.062069-17.655172 17.655172-17.655172s17.655172 7.062069 17.655173 17.655172v512c0 5.296552-3.531034 10.593103-7.062069 14.124138l-300.137931 211.862069c-3.531034 1.765517-7.062069 3.531034-10.593104 3.531035z" fill="#3164AF" p-id="7679"></path><path d="M391.944828 540.248276h-31.779311V388.413793h31.779311v60.027586h58.262069V388.413793h33.544827v153.6h-31.77931v-67.089655h-58.262069v65.324138zM579.089655 542.013793c-47.668966-1.765517-72.386207-26.482759-74.151724-77.682759 1.765517-52.965517 26.482759-79.448276 74.151724-79.448275 47.668966 1.765517 70.62069 28.248276 72.386207 79.448275 0 51.2-24.717241 77.682759-72.386207 77.682759z m0-134.17931c-26.482759 0-38.841379 19.42069-38.841379 56.496551s12.358621 54.731034 38.841379 54.731035c24.717241 0 38.841379-17.655172 38.841379-54.731035s-12.358621-56.496552-38.841379-56.496551zM663.834483 413.131034V388.413793h123.586207v26.482759H741.517241v127.117241h-33.544827v-127.117241h-44.137931z" fill="#2D5FA4" p-id="7680"></path><path d="M787.42069 642.648276H360.165517c-10.593103 0-17.655172-7.062069-17.655172-17.655173s7.062069-17.655172 17.655172-17.655172h427.255173c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7681"></path></svg>
+<h4>奥迪A6L</h4>
+<svg t="1661570486291" class="icon" viewBox="0 0 1058 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7424" width="48" height="48"><path d="M137.941126 147.616721l-127.535297 320.937666a39.432614 39.432614 0 0 0 2.519306 34.320979l286.178546 495.682565a39.432614 39.432614 0 0 0 53.854728 14.458625l469.248109-270.916664a39.432614 39.432614 0 0 0 14.422113-53.891239L550.450085 192.526088a39.432614 39.432614 0 0 0-28.442599-19.351191l-341.712811-50.021001a39.432614 39.432614 0 0 0-42.353549 24.462825z" fill="#FFC7CE" p-id="7425"></path><path d="M273.253412 51.51798l-128.959253 354.966551c-4.016285 10.953504-2.920934 23.075382 2.920934 33.189117l325.976277 564.616617a39.432614 39.432614 0 0 0 53.854728 14.422114l500.867224-289.172505a39.432614 39.432614 0 0 0 14.422113-53.854727L716.359158 111.06853a39.432614 39.432614 0 0 0-27.274225-19.13212L317.213474 26.178874a39.432614 39.432614 0 0 0-43.960062 25.339106z" fill="#FF6073" p-id="7426"></path><path d="M456.395998 273.837599m-91.2792 0a91.2792 91.2792 0 1 0 182.558399 0 91.2792 91.2792 0 1 0-182.558399 0Z" fill="#FFFFFF" p-id="7427"></path></svg>
+</div>
+<div class="icon-words">
+<div class="car-type">
+<i class="wp-fa wp-fa-car"></i>
+<span>小型车&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-wheelchair"></i>
+<span>5座&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-clock-o"></i>
+<span>1.4L</span>
+</div>
+<!-- <div class="space">
+<i class="fa fa-thumbs-o-up"></i>
+<span>空间较大，乘坐舒适</span>
+</div> -->
+<span></span>
+</div>
+</div>
+<!-- <p>空间：空间较大，建议乘坐5人+3行李箱</p> -->
+<!-- 右边模块 -->
+<span class="xian"></span>
+</a>
+<div class="wp-ccar-right">
+    <div class="wz">
+    <span class="browse">30人正在浏览该车</span>
+    <span class="borwse browses">最新预定：1分钟前</span>
+    </div>
+<div class="reserve">
+<a class="wp-button">
+<span class="day">￥<h5>317</h5>/天</span>
+<span class="total">总价：636元</span>
+</a>
+<svg t="1661572706436" class="icon jr" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8875" width="64" height="64"><path d="M709.845333 250.346667a22.4 22.4 0 0 1 0.533334-30.848 20.48 20.48 0 0 1 29.717333 0.64l272.426667 292.693333-272.426667 292.650667a20.458667 20.458667 0 0 1-29.717333 0.64c-8.32-8.32-8.746667-21.973333-0.533334-30.848l242.346667-262.464-242.346667-262.464z" fill="#707070" p-id="8876"></path></svg>
+</div>
+</div>
+</div>
+<!-- 后面车辆复制上方结构 -->
+</div>
+<div class="wp-content wp-contain">
+<a class="cqc" href="./carDetails.html" title="空间较大，乘坐舒适">
+<!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+<div class="wp-content-car wp-box">
+<!-- 左边模块 -->
+<div class="wp-ccar-left">
+<img src="../images/car2.png" alt="">
+</div>
+<!-- 中间模块 -->
+<div class="wp-ccar-center">
+    <div class="pingpai">
+        <svg t="1661570594134" class="icon qian" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7677" width="32" height="32"><path d="M1006.344828 195.972414H123.586207c-10.593103 0-17.655172-7.062069-17.655173-17.655173s7.062069-17.655172 17.655173-17.655172h882.758621c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7678"></path><path d="M579.089655 919.834483c-3.531034 0-7.062069-1.765517-8.827586-3.531035L247.172414 706.206897c-5.296552-3.531034-8.827586-8.827586-8.827586-14.124138v-512c0-10.593103 7.062069-17.655172 17.655172-17.655173s17.655172 7.062069 17.655172 17.655173v503.172413L577.324138 882.758621l284.248276-199.503449V178.317241c0-10.593103 7.062069-17.655172 17.655172-17.655172s17.655172 7.062069 17.655173 17.655172v512c0 5.296552-3.531034 10.593103-7.062069 14.124138l-300.137931 211.862069c-3.531034 1.765517-7.062069 3.531034-10.593104 3.531035z" fill="#3164AF" p-id="7679"></path><path d="M391.944828 540.248276h-31.779311V388.413793h31.779311v60.027586h58.262069V388.413793h33.544827v153.6h-31.77931v-67.089655h-58.262069v65.324138zM579.089655 542.013793c-47.668966-1.765517-72.386207-26.482759-74.151724-77.682759 1.765517-52.965517 26.482759-79.448276 74.151724-79.448275 47.668966 1.765517 70.62069 28.248276 72.386207 79.448275 0 51.2-24.717241 77.682759-72.386207 77.682759z m0-134.17931c-26.482759 0-38.841379 19.42069-38.841379 56.496551s12.358621 54.731034 38.841379 54.731035c24.717241 0 38.841379-17.655172 38.841379-54.731035s-12.358621-56.496552-38.841379-56.496551zM663.834483 413.131034V388.413793h123.586207v26.482759H741.517241v127.117241h-33.544827v-127.117241h-44.137931z" fill="#2D5FA4" p-id="7680"></path><path d="M787.42069 642.648276H360.165517c-10.593103 0-17.655172-7.062069-17.655172-17.655173s7.062069-17.655172 17.655172-17.655172h427.255173c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7681"></path></svg>
+<h4>奥迪A6L</h4>
+<svg t="1661570486291" class="icon" viewBox="0 0 1058 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7424" width="48" height="48"><path d="M137.941126 147.616721l-127.535297 320.937666a39.432614 39.432614 0 0 0 2.519306 34.320979l286.178546 495.682565a39.432614 39.432614 0 0 0 53.854728 14.458625l469.248109-270.916664a39.432614 39.432614 0 0 0 14.422113-53.891239L550.450085 192.526088a39.432614 39.432614 0 0 0-28.442599-19.351191l-341.712811-50.021001a39.432614 39.432614 0 0 0-42.353549 24.462825z" fill="#FFC7CE" p-id="7425"></path><path d="M273.253412 51.51798l-128.959253 354.966551c-4.016285 10.953504-2.920934 23.075382 2.920934 33.189117l325.976277 564.616617a39.432614 39.432614 0 0 0 53.854728 14.422114l500.867224-289.172505a39.432614 39.432614 0 0 0 14.422113-53.854727L716.359158 111.06853a39.432614 39.432614 0 0 0-27.274225-19.13212L317.213474 26.178874a39.432614 39.432614 0 0 0-43.960062 25.339106z" fill="#FF6073" p-id="7426"></path><path d="M456.395998 273.837599m-91.2792 0a91.2792 91.2792 0 1 0 182.558399 0 91.2792 91.2792 0 1 0-182.558399 0Z" fill="#FFFFFF" p-id="7427"></path></svg>
+</div>
+<div class="icon-words">
+<div class="car-type">
+<i class="wp-fa wp-fa-car"></i>
+<span>小型车&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-wheelchair"></i>
+<span>5座&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-clock-o"></i>
+<span>1.4L</span>
+</div>
+<!-- <div class="space">
+<i class="fa fa-thumbs-o-up"></i>
+<span>空间较大，乘坐舒适</span>
+</div> -->
+<span></span>
+</div>
+</div>
+<!-- <p>空间：空间较大，建议乘坐5人+3行李箱</p> -->
+<!-- 右边模块 -->
+<span class="xian"></span>
+</a>
+<div class="wp-ccar-right">
+    <div class="wz">
+    <span class="browse">30人正在浏览该车</span>
+    <span class="borwse browses">最新预定：1分钟前</span>
+    </div>
+<div class="reserve">
+<a class="wp-button">
+<span class="day">￥<h5>317</h5>/天</span>
+<span class="total">总价：636元</span>
+</a>
+<svg t="1661572706436" class="icon jr" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8875" width="64" height="64"><path d="M709.845333 250.346667a22.4 22.4 0 0 1 0.533334-30.848 20.48 20.48 0 0 1 29.717333 0.64l272.426667 292.693333-272.426667 292.650667a20.458667 20.458667 0 0 1-29.717333 0.64c-8.32-8.32-8.746667-21.973333-0.533334-30.848l242.346667-262.464-242.346667-262.464z" fill="#707070" p-id="8876"></path></svg>
+</div>
+</div>
+</div>
+<!-- 后面车辆复制上方结构 -->
+</div>
+<div class="wp-content wp-contain">
+<a class="cqc" href="./carDetails.html" title="空间较大，乘坐舒适">
+<!-- 以下是每个单个的车量结构，每个结构都相同，所以复制即可 -->
+<div class="wp-content-car wp-box">
+<!-- 左边模块 -->
+<div class="wp-ccar-left">
+<img src="../images/car3.png" alt="">
+</div>
+<!-- 中间模块 -->
+<div class="wp-ccar-center">
+    <div class="pingpai">
+        <svg t="1661570594134" class="icon qian" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7677" width="32" height="32"><path d="M1006.344828 195.972414H123.586207c-10.593103 0-17.655172-7.062069-17.655173-17.655173s7.062069-17.655172 17.655173-17.655172h882.758621c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7678"></path><path d="M579.089655 919.834483c-3.531034 0-7.062069-1.765517-8.827586-3.531035L247.172414 706.206897c-5.296552-3.531034-8.827586-8.827586-8.827586-14.124138v-512c0-10.593103 7.062069-17.655172 17.655172-17.655173s17.655172 7.062069 17.655172 17.655173v503.172413L577.324138 882.758621l284.248276-199.503449V178.317241c0-10.593103 7.062069-17.655172 17.655172-17.655172s17.655172 7.062069 17.655173 17.655172v512c0 5.296552-3.531034 10.593103-7.062069 14.124138l-300.137931 211.862069c-3.531034 1.765517-7.062069 3.531034-10.593104 3.531035z" fill="#3164AF" p-id="7679"></path><path d="M391.944828 540.248276h-31.779311V388.413793h31.779311v60.027586h58.262069V388.413793h33.544827v153.6h-31.77931v-67.089655h-58.262069v65.324138zM579.089655 542.013793c-47.668966-1.765517-72.386207-26.482759-74.151724-77.682759 1.765517-52.965517 26.482759-79.448276 74.151724-79.448275 47.668966 1.765517 70.62069 28.248276 72.386207 79.448275 0 51.2-24.717241 77.682759-72.386207 77.682759z m0-134.17931c-26.482759 0-38.841379 19.42069-38.841379 56.496551s12.358621 54.731034 38.841379 54.731035c24.717241 0 38.841379-17.655172 38.841379-54.731035s-12.358621-56.496552-38.841379-56.496551zM663.834483 413.131034V388.413793h123.586207v26.482759H741.517241v127.117241h-33.544827v-127.117241h-44.137931z" fill="#2D5FA4" p-id="7680"></path><path d="M787.42069 642.648276H360.165517c-10.593103 0-17.655172-7.062069-17.655172-17.655173s7.062069-17.655172 17.655172-17.655172h427.255173c10.593103 0 17.655172 7.062069 17.655172 17.655172s-7.062069 17.655172-17.655172 17.655173z" fill="#3164AF" p-id="7681"></path></svg>
+<h4>奥迪A6L</h4>
+<svg t="1661570486291" class="icon" viewBox="0 0 1058 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7424" width="48" height="48"><path d="M137.941126 147.616721l-127.535297 320.937666a39.432614 39.432614 0 0 0 2.519306 34.320979l286.178546 495.682565a39.432614 39.432614 0 0 0 53.854728 14.458625l469.248109-270.916664a39.432614 39.432614 0 0 0 14.422113-53.891239L550.450085 192.526088a39.432614 39.432614 0 0 0-28.442599-19.351191l-341.712811-50.021001a39.432614 39.432614 0 0 0-42.353549 24.462825z" fill="#FFC7CE" p-id="7425"></path><path d="M273.253412 51.51798l-128.959253 354.966551c-4.016285 10.953504-2.920934 23.075382 2.920934 33.189117l325.976277 564.616617a39.432614 39.432614 0 0 0 53.854728 14.422114l500.867224-289.172505a39.432614 39.432614 0 0 0 14.422113-53.854727L716.359158 111.06853a39.432614 39.432614 0 0 0-27.274225-19.13212L317.213474 26.178874a39.432614 39.432614 0 0 0-43.960062 25.339106z" fill="#FF6073" p-id="7426"></path><path d="M456.395998 273.837599m-91.2792 0a91.2792 91.2792 0 1 0 182.558399 0 91.2792 91.2792 0 1 0-182.558399 0Z" fill="#FFFFFF" p-id="7427"></path></svg>
+</div>
+<div class="icon-words">
+<div class="car-type">
+<i class="wp-fa wp-fa-car"></i>
+<span>小型车&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-wheelchair"></i>
+<span>5座&nbsp;|&nbsp;</span>
+</div>
+<div class="car-type">
+<i class="wp-fa wp-fa-clock-o"></i>
+<span>1.4L</span>
+</div>
+<!-- <div class="space">
+<i class="fa fa-thumbs-o-up"></i>
+<span>空间较大，乘坐舒适</span>
+</div> -->
+<span></span>
+</div>
+</div>
+<!-- <p>空间：空间较大，建议乘坐5人+3行李箱</p> -->
+<!-- 右边模块 -->
+<span class="xian"></span>
+</a>
+<div class="wp-ccar-right">
+    <div class="wz">
+    <span class="browse">30人正在浏览该车</span>
+    <span class="borwse browses">最新预定：1分钟前</span>
+    </div>
+<div class="reserve">
+<a class="wp-button">
+<span class="day">￥<h5>317</h5>/天</span>
+<span class="total">总价：636元</span>
+</a>
+<svg t="1661572706436" class="icon jr" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8875" width="64" height="64"><path d="M709.845333 250.346667a22.4 22.4 0 0 1 0.533334-30.848 20.48 20.48 0 0 1 29.717333 0.64l272.426667 292.693333-272.426667 292.650667a20.458667 20.458667 0 0 1-29.717333 0.64c-8.32-8.32-8.746667-21.973333-0.533334-30.848l242.346667-262.464-242.346667-262.464z" fill="#707070" p-id="8876"></path></svg>
+</div>
+</div>
+</div>
+<!-- 后面车辆复制上方结构 -->
+</div>
+<!-- ----------------换页---------------- -->
+<div class="skip">
+    <ul class="ul">
+    <li>
+    <a class="sxy" href="">
+    上一页
+    </a>
+    </li>
+    <li>
+    <a href="">
+    1
+    </a>
+    </li>
+    <li>
+    <a href="">
+    2
+    </a>
+    </li>
+    <li>
+    <a href="">
+    3
+    </a>
+    </li>
+    <li>
+    <a class="sxy" href="">
+    下一页
+    </a>
+    </li>
+    <!-- 后面同上 -->
+    </ul>
+    </div>
+<!-- ----------------换页---------------- -->
+<div class="wp-skip">
+    <ul class="ul">
+    <li>
+    <a class="sxy" href="">
+    上一页
+    </a>
+    </li>
+    <li class="one">
+    <a href="">
+    1
+    </a>
+    </li>
+    <li>
+    <a href="">
+    2
+    </a>
+    </li>
+    <li>
+    <a href="">
+    3
+    </a>
+    </li>
+    <li>
+    <a class="sxy" href="">
+    下一页
+    </a>
+    </li>
+    <!-- 后面同上 -->
+    </ul>
+    </div>
+    
+
+    <!-- ----------------回到顶部---------------- -->
+    <div class="back-top">
+    <a href="./intercar.html">回顶部</a>
+    </div>
+
+
+
+    <!-- ----------------banner模块结束---------------- -->
+<!-- ----------------脚部---------------- -->
+<div id="hidden-xs" class="footer">
+    <div class="f-about contain" >
+    <!-- 关于卡卡租车 -->
+    <ul class="footer-about">
+    <li>关于卡卡租车</li>
+    <li><a href="#">关于我们</a></li>
+    <li><a href="#">联系我们</a></li>
+    <li><a href="#">加入我们</a></li>
+    <li><a href="#">媒体报道</a></li>
+    </ul>
+    <ul>
+    <li>条款</li>
+    <li><a href="">隐私条款</a></li>
+    <li><a href="">用户协议</a></li>
+    </ul>
+    <ul>
+    <LI>帮助</LI>
+    <LI><a href="">客服中心</a></LI>
+    <LI><a href="">互问互答</a></LI>
+    <LI><a href="">常见问题</a></LI>
+    <LI><a href="">出游安全提示</a></LI>
+    </ul>
+    <ul>
+    <li>关于服务</li>
+    <li><a href="">服务时间</a></li>
+    <li><a href="">短租及可选服务</a></li>
+    </ul>
+    <ul>
+    <li>微信公众号</li>
+    <li><img src="../images/wechrt.png" alt=""></li>
+    </ul>
+    </div>
+    </div>
+    <div class="serve-container">
+        <div class="serve-container-title">境内租车就选卡卡租车</div>
+        <div class="serve-container-body">
+            <ul class="serve-list">
+                <li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">支持全国</p>
+                    <p class="subtitle">600多个城市</p>
+                </li>
+                <li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">7x24小时</p>
+                    <p class="subtitle">客户服务</p>
+                </li>
+                <li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">11年租车平台</p>
+                    <p class="subtitle">服务超3千万用户</p>
+                </li>
+                <li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">信用免押金</p>
+                    <p class="subtitle">免租车&amp;违章押金</p>
+                </li><li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">送车上门</p>
+                    <p class="subtitle">上门取车</p>
+                </li><li class="serve-item">
+                    <div class="cover"></div>
+                    <p class="title">享3重优惠</p>
+                    <p class="subtitle">比门店便宜 </p>
+                </li>
+            </ul>
+        </div>
+        <div id="visible-xs" class="footapp">
+            <p>微信公众号</p>
+        <li><img src="../images/wechrt.png" alt=""></li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

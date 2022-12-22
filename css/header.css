@@ -1,0 +1,496 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+li{
+    list-style: none;
+}
+@media (min-width: 0px) and (max-width: 768px){
+    .header{
+        display: none;
+    }
+    .wp-h-words{
+    width: 100%;
+    }
+    .wp-login{
+        color: #fff;
+    }
+    .wp-h-logo{
+    text-align: center;
+    margin: 0 auto;
+    background: #202020;
+    }
+    .wp-h-logo a {
+    display: inline-block;
+    width: 144px;
+    height: 56px;
+    background: url(../images/logo.png) no-repeat center;
+    }
+    .wp-login-phon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .wp-login-phon li svg{
+        width: 24px;
+        height: 24px;
+        padding-right: 5px;
+    }
+    .wp-tubiao{
+        width: 100%;
+    height: 50px;
+    background: aquamarine;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 999;
+    }
+    .tubiao>ul{
+        width: 550px;
+    }
+    .wp-tubiao>ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wp-h-login{
+        display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    float: right;
+    color: blueviolet;
+    top: -50px;
+    right: 10px;
+    justify-content: space-between;
+    width: 100%;
+    }
+    .wp-h-login-left{
+        width: 30%;
+    }
+    .wp-h-login-left a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wp-h-login-left ion-icon svg{
+        width: 22px;
+        height: 22px;
+        background-color: #f3f3f3;
+    }
+    .wp-h-login-right{
+        width: 38%;
+        position: relative;
+    }
+    .wp-h-login-right a{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    .wp-login-phon .wp-fa svg{
+        animation: icon-phon .5s ease-in-out infinite;
+    }
+    .wp-h-pnum{
+        color: blueviolet;
+        animation: phone 1s ease-in-out infinite;
+    }
+    .wp-h-title li a{
+        font-size: 16px;
+        color: #7f7f7f;
+    }
+    .wp-h-login .login{
+        color: #f3f3f3;
+    }
+    .wp-h-title li:nth-child(1) a {
+        }
+        .swiper-container {
+            width: 100%;
+        /* 切换页的颜色 */
+        --swiper-theme-color: #072c4d;
+        /* 轮播图的颜色 */
+        --swiper-pagination-color: #838383;
+        /* height: 400px; */
+        overflow: hidden;
+        }
+        .navi{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+.navig{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: 5px;
+    left: -28px;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+}
+.navigation::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: 5px;
+    right: -28px;
+    border-radius: 50%;
+    box-shadow: -15px 18px #fff;
+    z-index: -1;
+}
+.menuToggle{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 70px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.menuToggle::before{
+    content: '+';
+    position: absolute;
+    font-size: 3em;
+    font-weight: 200;
+    color: #ff216d;
+    transition: 1.5s;
+}
+.menu ul li:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        }
+.searchBox{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.searchBox.active{
+    width: 360px;
+}
+.searchBox .search{
+    position: relative;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.searchBox .close{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25em;
+    scale: 0;
+    transition: 0.5s;
+}
+.searchBox.active .close{
+    scale: 1;
+    transition-delay: 0.5s;
+}
+.searchBox .searchInpt{
+    position: absolute;
+    left: 60px;
+    width: calc(100% - 64px);
+    height: 100%;
+    line-height: 32px;
+}
+.searchBox .searchInpt input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.25em;
+}
+#sousuo{
+        font-size: 11px;
+    text-align: center;
+    margin-top: 3px;
+    white-space: pre;
+    color: #555555;
+}
+.menuToggle.active::before{
+    transform: rotate(225deg);
+}
+.menu{
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    background: #fff;
+    border-radius: 70px;
+    z-index: -1;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    transition-delay: 1s, 0.5s, 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menuToggle.active ~ .menu{
+    width: 380px;
+    height: 70px;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition-delay: 0s, 0.5s, 0.5s;
+    box-shadow: 0 15px 25px rgba(0,0,0,0,0.1);
+}
+.menu::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    left: calc(50% - 8px);
+    bottom: 4px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.menuToggle.active ~ .menu::before{
+    transition-delay: 0.5s;
+    bottom: -6px;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 35px;
+    padding: 0 12px;
+}
+.menu ul li{
+    list-style: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: 0.25s;
+    transition-delay: calc(0s + var(--i));
+}
+.menuToggle.active ~ .menu ul li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: calc(0.75s + var(--i));
+}
+.menu ul li a{
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    color: #555;
+}
+.menu ul li:hover a{
+    color: #ff216d;
+}
+.menu ul li ion-icon span{
+        font-size: 12px;
+    text-align: center;
+    margin-top: 3px;
+    white-space: pre;
+}
+.iconfont{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+        @keyframes icon-phon {
+            0%, 100%{
+                transform: rotate(-15deg);
+            }
+            50%{
+                transform: rotate(15deg);
+            }
+            
+        }
+        @keyframes phone {
+            0%, 100%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            
+        }
+}
+
+
+
+
+
+
+
+    @media (min-width: 768px){
+        .wp-h-words,
+        .wp-swiper-container,
+    .wp-rent-car,
+    .wp-h-login-left,
+    .wp-h-login-right,
+    .img>svg,
+    .icon-hot,
+    .navi{
+        display: none;
+    }
+    .header>.contain{
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+
+    body{
+    background-color: #f3f3f3;
+    }
+
+    .hw{
+    height: 16px;
+    width: 16px;
+    }
+
+    /*-
+    --------------- head部分---------------- */
+    .header {
+    height: 100px;
+    background-color: #202020;
+    }
+    .contain {
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+    .h-words {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    }
+
+    /* logo部分 */
+    .h-logo {
+    width: 144px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    }
+
+    .h-logo a {
+    display: inline-block;
+    width: 144px;
+    height: 56px;
+    background: url(../images/logo.png) no-repeat center;
+    }
+
+    /* 标题部分 */
+    .h-title {
+        width: 555px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .h-title li{
+        list-style: none;
+    }
+
+    .h-title a {
+        font-size: 16px;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        }
+
+    .h-title a:hover {
+        color: #cf9257;
+        }
+
+        /* 登录注册部分 */
+    .h-login {
+    width: 199px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    }
+
+    .login {
+    display: inline-block;
+    padding: 6px 10px;
+    width: 92px;
+    height: 24px;
+    background-color: #ca9b44;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    }
+
+    .login-phon {
+    font-family: "FZZDHJW--GB1-0";
+    font-size: 22px;
+    color: #ffffff;
+    }
+
+    .login-phon i {
+    color: #ca9b44;
+    padding: 0 4px;
+    }
+/* 
+    .h-title li:nth-child(1) a {
+    color: #cf9257;
+    font-size: 20px;
+    } */
+
+    }

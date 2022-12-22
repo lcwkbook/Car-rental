@@ -1,0 +1,508 @@
+@media (min-width: 0px) and (max-width: 768px){
+.swiper-container,
+.rent-car{
+    display: none;
+}
+body{
+    background: #0f0f0f0a;
+}
+#box {
+        width: 100%;
+        position: relative;
+    }
+.wp-swiper-container{
+    width: 100%;
+}
+.wp-swiper-wrapper{
+    width: 100%;
+}
+.wp-swiper-wrapper img{
+    width: 100%;
+}
+#wp-swiper{
+    position: relative;
+}
+#img {
+    width: 100%;
+    position: relative;
+    height: 140px;
+}
+#img img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+#num li {
+    float: left;
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#num {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+#num li:hover {
+    background-color: #f80;
+}
+#num li.active {
+    background-color: #f80;
+}
+   /*---------------- 租车服务部分---------------- */
+.wp-rent-car {
+    width: 95%;
+    display: flex;
+    height: 96px;
+    margin: 10px;
+    flex-direction: row;
+    }
+    .wp-differt-rent {
+        width: 30%;
+        height: 96px;
+        position: relative;
+        margin: 0 10px;
+    }
+/* 下面背景盒子 */
+.wp-rent-box {
+    position: absolute;
+    width: 100%;
+    height: 96px;
+    background: #202020;
+    transform: skewX(-20deg);
+    overflow: hidden;
+    }
+    /* 上面内容盒子 */
+    .wp-rent-words {
+        position: absolute;
+    width: 100%;
+    height: 96px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    }
+    .wp-difr-top {
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    .wp-difr-top span {
+        display: inline-block;
+        width: 35%;
+        border-radius: 50%;
+        background-color: rgb(107, 153, 180);
+        line-height: 25px;
+        text-align: center;
+        transition: all 1s;
+    }
+    .wp-difr-bottom {
+    font-size: 12px;
+    margin: 0 auto;
+    }
+    .wp-difr-top span:hover {
+    transform: rotatez(180deg);
+    }
+/*---------------- 热门车型---------------- */
+.hot-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    }
+    .bjtp{
+        background: #666;
+    }
+    .bjtp span{
+        color: #fff;
+    }
+    .hot-title span{
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 1s;
+    margin-right: 10px;
+    }
+    .hot-title span:first-child{
+    display: inline-block;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 900;
+    }
+    @keyframes identifier {
+        
+    }
+    .hot-title span:first-child:hover{
+    transform: rotatez(180deg);
+    }
+    .hot-content ul{
+    /* height: 610px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background: #cacaca;
+    }
+    .hot-content ul li{
+        width: 100%;
+        height: 240px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 8px;
+        position: relative;
+        background: #ffffffe3;
+    }
+    .hot-content li .img{
+    height: 135px;
+    width: 170px;
+    overflow: hidden;
+    position: relative;
+    }
+    .hot-content li svg{
+        position: absolute;
+        top: -3px;
+        left: -4px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+    }
+    .hot-content li img{
+    width: 100%;
+    position: relative;
+    }
+    li .icon-words{
+    display: flex;
+    margin: 0 auto;
+    }
+    .hot-title{
+    font-family: "SourceHanSansCN-Bold";
+    font-size: 20px;
+    color: #646464;
+    font-weight: 500;
+    padding: 5px;
+    }
+    .difcar-btn{
+        display: inline-block;
+        width: 108px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        line-height: 38px;
+        position: absolute;
+        bottom: 5px;
+        left: 40%;
+    }
+    .car-type{
+    color: #6b6b6b;
+    letter-spacing: 1px;
+    font-family: "SourceHanSansCN-Medium";
+    font-size: 18px;
+    }
+    .space{
+    color: #cb9e4c;
+    }
+    /* 盒子阴影大小 */
+    .box{
+    box-shadow: -2px 7px 10px 0px rgba(98, 98, 98, 0.11);
+    /* transition: all 0.5s; */
+    }
+    /* .box:hover{
+    cursor:pointer;
+    transform: translateY(-10px);
+    } */
+    .button{
+    background-color: #ffa42c;
+    }
+    .button:hover{
+    cursor:pointer;
+    background-color: #c57b19;
+    }
+.icon-hot {
+    position: absolute;
+    top: 15%;
+    left: 64%;
+    transform: translateY(-50%);
+}
+.icon-hot ion-icon svg{
+    width: 86px;
+    height: 86px;
+}
+
+
+
+
+
+
+
+}
+
+@media (min-width: 768px){
+    .swiper-container {
+    /* 切换页的颜色 */
+    --swiper-theme-color: #072c4d;
+    /* 轮播图的颜色 */
+    --swiper-pagination-color: #838383;
+    height: 400px;
+    overflow: hidden;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullet 
+    {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: #494949a2;
+    }
+
+    .swiper-pagination-bullet-active {
+    background: #072c4d !important;
+    width: 1.2rem !important;
+    }
+
+    .swiper-pagination-bullet {
+    opacity: 1;
+    }
+
+    .swiper-wrapper{
+    width: 1150px;
+    margin: auto;
+    }
+
+    .swiper-slide img {
+    width: 1150px;
+    }
+/*---------------- 租车服务部分---------------- */
+.rent-car {
+    width: 900px;
+    display: flex;
+    height: 96px;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+    .differt-rent {
+    width: 280px;
+    height: 96px;
+    position: relative;
+    margin: 0 10px;
+    }
+
+    /* 下面背景盒子 */
+.rent-box {
+    position: absolute;
+    width: 280px;
+    height: 96px;
+    background: #202020;
+    transform: skewX(-20deg);
+    overflow: hidden;
+    }
+
+    /* 上面内容盒子 */
+    .rent-words {
+    position: absolute;
+    width: 280px;
+    height: 96px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    .difr-top {
+    font-size: 20px;
+    font-weight: 700;
+    }
+
+    .difr-top span {
+    display: inline-block;
+    width: 36px;
+    border-radius: 50%;
+    background-color: rgb(107, 153, 180);
+    line-height: 36px;
+    text-align: center;
+    transition: all 1s;
+    }
+
+    .difr-bottom {
+    margin: 0 auto;
+    }
+
+    .difr-top span:hover {
+    transform: rotatez(180deg);
+    }
+    
+    /*---------------- 热门车型---------------- */
+    .hot-car{
+    height: 686px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    }
+
+    .contain{
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+    .hot-title span{
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 1s;
+    margin-right: 10px;
+    }
+
+    .hot-title span:first-child{
+    display: inline-block;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 900;
+    }
+
+    .hot-title span:first-child:hover{
+    transform: rotatez(180deg);
+    }
+
+    .hot-content{
+    height: 610px;
+    }
+
+    .hot-content ul{
+    height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    }
+
+    .hot-content ul li{
+    width: 220px;
+    height: 290px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    }
+
+    .hot-content li .img{
+    height: 142px;
+    width: 220px;
+    overflow: hidden;
+    }
+
+    .hot-content li img{
+    width: 220px;
+    }
+
+    li .icon-words{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .hot-title{
+    font-family: "SourceHanSansCN-Bold";
+    font-size: 20px;
+    color: #646464;
+    font-weight: 500;
+    }
+
+    .difcar-btn{
+    display: inline-block;
+    width: 108px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 38px;
+    }
+
+    .car-type{
+    color: #6b6b6b;
+    letter-spacing: 1px;
+    font-family: "SourceHanSansCN-Medium";
+    font-size: 18px;
+    }
+
+    .space{
+    color: #cb9e4c;
+    }
+
+    /* 盒子阴影大小 */
+    .box{
+    box-shadow: -2px 7px 10px 0px rgba(98, 98, 98, 0.11);
+    transition: all 0.5s;
+    }
+
+    .box:hover{
+    cursor:pointer;
+    transform: translateY(-10px);
+    }
+
+    .button{
+    background-color: #ffa42c;
+    }
+
+    .button:hover{
+    cursor:pointer;
+    background-color: #c57b19;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
